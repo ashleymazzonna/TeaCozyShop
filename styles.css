@@ -6,6 +6,47 @@
   box-sizing: inherit; }
 
   html {
-      box-sizing: border-box;
-      font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
+    color: rgb(211, 202, 195);
+    opacity: 0.9;
+    font-family: Helvetica, sans-serif;
   }
+
+header {
+    height: 70rem;
+    background-image: url("imgs/mission-background.jpg");
+    background-size: cover;
+    margin-top: 6.9rem;
+    border-top: 1px solid seashell;
+    position: relative;
+}
+
+.logo {
+    height: 5rem;
+    margin: 1rem;
+    position: relative;
+    top: -7rem;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;    
+}
+ul {
+    margin: 2rem;
+}
+li {
+    display: inline;
+    padding: 2rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+ li:hover {
+     color:rgb(247, 203, 172);
+     text-decoration: none;
+ }
