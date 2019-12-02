@@ -13,40 +13,55 @@
     opacity: 0.9;
     font-family: Helvetica, sans-serif;
   }
-
-header {
-    height: 70rem;
-    background-image: url("imgs/mission-background.jpg");
-    background-size: cover;
-    margin-top: 6.9rem;
-    border-top: 1px solid seashell;
-    position: relative;
-}
-
-.logo {
-    height: 5rem;
-    margin: 1rem;
-    position: relative;
-    top: -7rem;
-}
-
 nav {
     background-color: black;
     position: fixed;
+    top: 0rem;
+    right: 0;   
+    width: 100%;
+    z-index: 3;  
+    border-bottom: 1px solid seashell;
+     
+}
+.logo {
+    height: 5rem;
+    margin: 2rem;
+    position: fixed;
     top: 0;
-    right: 0;    
+    z-index: 8;
 }
 ul {
-    margin: 2rem;
+    margin: 1.5rem;
+    border-radius: 15px; 
 }
 li {
-    display: inline;
-    padding: 2rem;
+    /* display: inline-block; */
+    padding: 2.5rem;
     font-size: 2.2rem;
     cursor: pointer;
     text-decoration: underline;
+    float: right;
+    list-style: none;
 }
  li:hover {
      color:rgb(247, 203, 172);
      text-decoration: none;
+ }
+
+.hero-img__box {
+    height: 70rem;
+    background-image: url("imgs/mission-background.jpg");
+    background-size: cover;
+    margin: 6.9rem 2.5rem 1rem 2.5rem;
+    padding: 1rem;
+
+    /* position: relative; */
+
+}
+ .heading-text__box {
+     background-color: black;
+     width: 120rem;
+     position: relative;
+     top: 34rem;
+     text-align: center;
  }
