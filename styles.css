@@ -60,8 +60,77 @@ li {
 }
  .heading-text__box {
      background-color: black;
-     width: 120rem;
-     position: relative;
+     width: 100%;
+     position: absolute;
      top: 34rem;
+     right: 0;
      text-align: center;
  }
+
+ .heading-text__primary {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    letter-spacing: .6rem;
+    padding: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+ }
+
+ .heading-text__secondary {
+     font-size: 2.2rem;
+     text-transform: capitalize;
+     padding-bottom: 1rem;
+
+    animation-name: moveInBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+ }
+
+
+
+ /* ANIMATIONS */
+ @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        translate: (0); /* 0 is the initial state */
+    }
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        translate: (0);
+    }
+
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        translate: (0);
+    }
+
+}
