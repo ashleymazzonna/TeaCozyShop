@@ -58,11 +58,16 @@ li {
     background-size: cover;
     margin: 6.9rem 2.5rem 1rem 2.5rem;
     padding: 1rem;
-
     /* position: relative; */
 
 }
-
+.locations-section__box {
+    background-size: cover;
+    background-image: url("imgs/locations-background.jpg"); 
+    height: 70rem;
+    margin: 3rem 2.5rem 20rem 2.5rem;
+    padding: 1rem;
+}
  .heading-one__box,  .heading-two__box {
     background-color: black;
      width: 100%;
@@ -84,7 +89,10 @@ li {
     animation-duration: 3s;
     animation-timing-function: ease-in-out; 
 }
-
+.heading-text__primary:hover {
+    transform: skewX(2.5deg) skewX(20deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgb(121, 120, 120);
+}
 .heading-text__secondary {
      font-size: 2.2rem;
      text-transform: capitalize;
@@ -95,6 +103,10 @@ li {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
 }
+.steeping:hover {
+    transform:  scale(1.2);
+    text-shadow: .5rem 1rem 2rem rgb(121, 120, 120);
+}
 /* FEATURES SECTIONS */
 
 .features-imgs {
@@ -103,17 +115,19 @@ li {
     /* margin-left: 2rem; */
     border-radius: 15px;
 
-
 }
 .features-imgs:hover {
     transform: translateY(-1.5rem) scale(1.2);
+    /* box-shadow: .2rem.2rem .5rem .2rem rgb(121, 120, 120); */
+     outline: .5rem solid rgb(121, 120, 120) ;
+    transform: scale(1.05);
+    outline-offset: 2rem;
 }
 .img-caption {
     font-size: 2rem;
     text-align: center;
     text-transform: capitalize;
     max-width: 30rem;
-    padding: 1rem;
 }
 
  /* ANIMATIONS */
@@ -193,6 +207,6 @@ li {
 }
 .row-2 {
     width: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
