@@ -1,10 +1,11 @@
+/* PRESETS */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
-
+/* MAIN */
   html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -13,6 +14,8 @@
     opacity: 0.9;
     font-family: Helvetica, sans-serif;
   }
+
+/* NAVIGATION BAR */
 nav {
     background-color: black;
     position: fixed;
@@ -48,6 +51,7 @@ li {
      text-decoration: none;
  }
 
+/* HERO AND HEADERS SECTION */
 .hero-img__box {
     height: 70rem;
     background-image: url("imgs/mission-background.jpg");
@@ -58,37 +62,59 @@ li {
     /* position: relative; */
 
 }
- .heading-text__box {
-     background-color: black;
+
+ .heading-one__box,  .heading-two__box {
+    background-color: black;
      width: 100%;
-     position: absolute;
-     top: 34rem;
-     right: 0;
      text-align: center;
  }
+ .heading-one__box {
+     position: absolute;
+     top: 34rem;
+     right: 0;  
+ }
 
- .heading-text__primary {
+.heading-text__primary {
     text-transform: uppercase;
     font-size: 3.2rem;
     letter-spacing: .6rem;
-    padding: 1rem;
-
+    padding: 1rem; }
+    .heading-primary_animation {
     animation-name: moveInLeft;
     animation-duration: 3s;
-    animation-timing-function: ease-in-out;
- }
+    animation-timing-function: ease-in-out; 
+}
 
- .heading-text__secondary {
+.heading-text__secondary {
      font-size: 2.2rem;
      text-transform: capitalize;
-     padding-bottom: 1rem;
-
+     letter-spacing: .3rem;
+     padding-bottom: 1rem; }
+     .heading-secondary-animation {
     animation-name: moveInBottom;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
- }
+}
+/* FEATURES SECTIONS */
+
+.features-imgs {
+    height: 20rem;
+    width: 30rem;
+    /* margin-left: 2rem; */
+    border-radius: 15px;
 
 
+}
+.features-imgs:hover {
+    transform: translateY(-1.5rem) scale(1.2);
+}
+.img-caption {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 30rem;
+    padding: 1rem;
+}
 
  /* ANIMATIONS */
  @keyframes moveInLeft {
@@ -134,3 +160,39 @@ li {
     }
 
 }
+
+/* GRID */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;}
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.row-1 {
+    margin-top: 3.5rem;
+}
+.row-2 {
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
