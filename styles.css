@@ -67,6 +67,7 @@ li {
     height: 70rem;
     margin: 3rem 2.5rem 20rem 2.5rem;
     padding: 1rem;
+    opacity: 1;
 }
  .heading-one__box,  .heading-two__box {
     background-color: black;
@@ -84,6 +85,7 @@ li {
     font-size: 3.2rem;
     letter-spacing: .6rem;
     padding: 1rem; }
+    
     .heading-primary_animation {
     animation-name: moveInLeft;
     animation-duration: 3s;
@@ -103,6 +105,25 @@ li {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
 }
+.locations-heading__box {
+    width: 100%;
+    text-align: center;    
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+h3.locations-heading {
+    text-transform: none;
+    letter-spacing: normal;
+    color: rgb(168, 165, 165);
+}
+h3.locations-heading__main {
+    color: rgb(247, 203, 172);
+    font-size: 4.5rem;
+}
+.card-heading {
+    font-size: 3.3rem;
+    padding: 2rem;
+}
 .steeping:hover {
     transform:  scale(1.2);
     text-shadow: .5rem 1rem 2rem rgb(121, 120, 120);
@@ -114,14 +135,13 @@ li {
     width: 30rem;
     /* margin-left: 2rem; */
     border-radius: 15px;
-
 }
-.features-imgs:hover {
+.features-imgs:hover, .locations:hover {
     transform: translateY(-1.5rem) scale(1.2);
-    /* box-shadow: .2rem.2rem .5rem .2rem rgb(121, 120, 120); */
+    /* box-shadow: .2rem.2rem .5rem .2rem rgb(121, 120, 120);
      outline: .5rem solid rgb(121, 120, 120) ;
     transform: scale(1.05);
-    outline-offset: 2rem;
+    outline-offset: 2rem; */
 }
 .img-caption {
     font-size: 2rem;
@@ -208,5 +228,21 @@ li {
 .row-2 {
     width: 50%;
     margin-bottom: 3.5rem;
+}
+div.locations {
+    background-color: black;
+    text-align: center;
+    border-radius:15px;
+    margin-top: 3rem;
+}
+p {
+    font-size: 2.2rem;
+    padding: 1rem;
+}
+p.last-line {
+    margin-bottom: 2rem;  
+}
+p.light-text {
+    opacity: .5;
 }
 
